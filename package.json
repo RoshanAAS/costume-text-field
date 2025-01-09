@@ -1,12 +1,16 @@
 {
   "name": "costume-text-field",
-  "version": "1.0.0",
-  "main": "dist/index.ts",
+  "version": "1.0.1",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
     "build": "npx rollup -c"
   },
+  "files": [
+    "dist",
+    "dist/index.d.ts"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -14,13 +18,15 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
-    "@mui/material": "^6.3.1",
+    "@mui/material": "^5.16.14",
     "build": "^0.1.4"
   },
   "devDependencies": {
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^28.0.2",
     "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-replace": "^6.0.2",
+    "@rollup/plugin-strip": "^3.0.4",
     "@rollup/plugin-typescript": "^12.1.2",
     "@types/estree": "^1.0.6",
     "@types/react": "^19.0.2",
